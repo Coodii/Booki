@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fr"> 
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>Booki</title>
+	</head>
+    <body>
+        <div>
+            <header>
+                <img id="logo" src="../images/logo/Booki.png" alt="Booki logo">
+                <nav>   
+                    <ul id="navigation">
+                        <li class="nav_li"><a class="nav_a" href="#Hebergements">Hebergements</a></li>
+                        <li class="nav_li"><a class="nav_a" href="#activite">Activités</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <article id="Hebergements">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou pleine nature</p>
+                    <form class="research">
+                        <div class="iconBackground"><i class="fa-solid fa-location-dot" id="localisation"></i></div>
+                        <input type ="search" id="research" value="Marseille,France">
+                        <button id="researchButton">Rechercher</button>
+                        <button id="researchButtonMobile"><i id="loupe" class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="filtres">
+                        <h3>Filtres</h3>
+                        <div class="economie_familial">
+                            <div class="filtre_element">
+                                <div class="imagebutton"><i class="fa-solid fa-money-bill-wave"></i></div><button class="bouttonfiltre">Economique</button>
+                            </div>
+                            <div class="filtre_element">
+                                <div class="imagebutton"><i class="fa-solid fa-child-reaching"></i></div><button class="bouttonfiltre">Familial</button>
+                            </div>
+                        </div>
+                        <div class="filtre_element">
+                            <div class="imagebutton"><i class="fa-solid fa-heart"></i></div><button class="bouttonfiltre">Romantique</button>
+                        </div>
+                        <div class="filtre_element">
+                            <div class="imagebutton"><i class="fa-solid fa-dog"></i></div><button class="bouttonfiltre">Animaux autorisés</button>
+                        </div>
+                    </div>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                    <div class = "hebergements">
+                        <div class="hebergements_a_marseille">
+                            <h3>Hébergements à Marseille</h3>
+                            <div class = "card">
+                                <img class= "card_image" src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image1">
+                                <h4>Auberge la Cannebière</h4>
+                                <p class="price">Nuit à partir de 25€</p>
+                                <div class = "rating">
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "greyStar"><i class="fa fa-star"></i></div>
+                                </div>
+                            </div>
+                            <div class = "card">
+                                <img class= "card_image" src="../images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image1">
+                                <h4>Auberge la Cannebière</h4>
+                                <p class="price">Nuit à partir de 25€</p>
+                                <div class = "rating">
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "blueStar"><i class="fa-solid fa-star"></i></div>
+                                    <div class = "greyStar"><i class="fa fa-star"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <p></p>
+                </article>
+            </main>
+        </div>
+    </body>
+    
+</html>

@@ -5,21 +5,25 @@
     font-style: normal;
    }
 
-   @font-face {
-    font-family: "Raleway-Black";
-    src: url("C:/OC JavaScript React/Projet 2/Booki FR/fonts/Raleway-Black.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-   }
 
 *{
     box-sizing: border-box;
 }
 
-
-div{
+body {
+    margin-left: 20px;
     font-family: "Raleway";
 }
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 17px;
+}
+
+
 header {
     margin-top: 0px;
     display: flex;
@@ -119,8 +123,9 @@ position:relative;
     flex-direction: row;
 }
 
+
 .filtre_element{
-    padding-left: 10px;
+    padding-left: 20px;
     display:flex;
     flex-direction: row;
 }
@@ -154,44 +159,65 @@ position:relative;
     border-bottom-right-radius:30px;
 }
 
-.hebergements{
-    height: 600px;
-    width: 8600px;
-    background-color:#F2F2F2; 
+.bouttonfiltre:hover {
+    border: 2px solid #0065FC;
 }
 
-h3{
-    padding-left: 20px;
+.hebergements{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hebergements_a_marseille{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    height: auto;
+    width: 60%;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    margin-right: -20px;
+}
+
+
+.ligneHebergement{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 20px;
     padding-top: 20px;
 }
 
 .card{
-    margin-left: 20px;
-    margin-top: 20px;
+    color: inherit;
+    text-decoration: none;
+    margin-right: 20px;
     background-color: white;
     border-radius: 20px 20px 20px 20px;
-    width: 350px;
-    height:50%;
-    object-fit: contain;
+    width: 30%;
+    height: 250px;
 }
 
-.card_image{
-    padding: 5px 5px 5px 5px;
+
+.imgCardHergementsMarseille{
     border-radius: 20px;
     width: 100%;
+    object-fit: cover;
     height: 60%;
+    padding: 5px 5px 5px 5px;
 }
 
 h4{
     padding-left: 20px;
-    margin-top: 0px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .price{
     margin-top: 0px;
     padding-left: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .rating {
@@ -208,10 +234,92 @@ h4{
     color:  #DEEBFF;;
 }
 
+.afficher{
+    font-size: 20px;
+    font-weight: bold;
+}
 
 
-.bouttonfiltre:hover {
-    border: 2px solid #0065FC;
+.lesPlusPopulaires{
+    margin-left: 50px;
+    background-color:#F2F2F2;
+    border-radius: 20px;
+    width: 40%;
+    margin-right: 50px;
+    padding: 20px 40px 40px 40px;
+}
+
+.LesPlusPopulaireTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.trending{
+    padding-left: 40px;
+    padding-top: 17px;
+    color: black;
+}
+
+.hebergementsPopulaires{
+    padding-bottom: 40px;
+    height: 100%;
+    width: 100%;
+}
+
+.cardPopulaire{
+    color: inherit;
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+
+}
+
+
+.cardHergementsLesPlusPop{
+    border-radius: 20px;
+    width: 35%;
+    object-fit: cover;
+    height: 100%;
+    padding: 5px 5px 5px 5px;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.footerSection{
+    width: 33%;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.footerTitle{
+    margin-bottom: 5px;
+}
+
+.footerUl{
+    margin-top: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.footerLi {
+    padding-top: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -281,5 +389,38 @@ h4{
         padding-top: 10px;
     }
 
+    .hebergements {
+        flex-direction: column;
+        width: 100%;
+    }
 
+    .hebergements_a_marseille{
+        width: 100%;
+        border-radius: 0px;
+        order: 2;
+        background-color: white;
+    }
+
+    .ligneHebergement{
+        width: 100%;
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .card{
+        width: 90%;
+        box-shadow:  0px 1px #ccc;
+        margin-top: 20px;
+    }
+
+    .lesPlusPopulaires{
+        width: 100%;
+        margin-left: 0px;
+        padding-bottom: 0px;
+        border-radius: 0px;
+    }
+
+    .cardPopulaire{
+        height: 200px;
+    }
 }

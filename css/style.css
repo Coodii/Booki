@@ -11,11 +11,15 @@
 }
 
 body {
-    margin-left: 20px;
     font-family: "Raleway";
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
+    margin-left: 20px;
+    padding-top: 20px;
     font-size: 20px;
 }
 
@@ -23,6 +27,13 @@ h2{
     font-size: 17px;
 }
 
+
+
+
+ /**
+   * Header
+    ==========================================================================
+   */
 
 header {
     margin-top: 0px;
@@ -61,11 +72,21 @@ header {
     color: #0065FC;
 }
 
+
+
+
+ /**
+   * Barre de recherche
+    ==========================================================================
+   */
+
+
 .research{
-height: 40px;
-display:flex;
-flex-direction: row;
-position:relative;
+    margin-left: 20px;
+    height: 40px;
+    display:flex;
+    flex-direction: row;
+    position:relative;
 }
 
 .iconBackground{
@@ -117,7 +138,20 @@ position:relative;
     display: none;
 }
 
+
+
+
+
+
+ /**
+   * Filtres
+    ==========================================================================
+   */
+
+
+
 .filtres{
+    margin-left: 20px;
     padding-top: 20px;
     display:flex;
     flex-direction: row;
@@ -163,11 +197,60 @@ position:relative;
     border: 2px solid #0065FC;
 }
 
+
+
+
+ /**
+   * Paragraphes logements disponibles
+    ==========================================================================
+   */
+
+.logement{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.infoIcon{
+    height: 20px;
+    width: 20px;
+    margin-top: 12px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 1px solid #F2F2F2;
+    color: #0065FC;
+    text-align: center;
+}
+
+.paragrapheInfo{
+    padding-left: 10px;
+}
+
+
+
+ /**
+   * Hébergements
+    ==========================================================================
+   */
+
+
 .hebergements{
+    margin-left: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
+
 }
+
+
+
+ /**
+   * Hébergements a Marseille
+    ==========================================================================
+   */
+
+
 
 .hebergements_a_marseille{
     padding-top: 20px;
@@ -240,6 +323,17 @@ h4{
 }
 
 
+
+
+
+
+ /**
+   * Hébergements les plus populaires
+    ==========================================================================
+   */
+
+
+
 .lesPlusPopulaires{
     margin-left: 50px;
     background-color:#F2F2F2;
@@ -284,8 +378,7 @@ h4{
 
 }
 
-
-.cardHergementsLesPlusPop{
+.imgCardHergementsLesPlusPop{
     border-radius: 20px;
     width: 35%;
     object-fit: cover;
@@ -293,6 +386,90 @@ h4{
     padding: 5px 5px 5px 5px;
 }
 
+.pricepop{
+    padding-bottom: 15px;
+}
+
+
+
+
+ /**
+   * Activités
+    ==========================================================================
+   */
+
+.activites{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    padding-bottom: 40px;
+}
+
+.activitesSplit{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+
+.cardActiviteLarge{
+    color: inherit;
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 25%;
+    height: 100%;
+    margin-right: 20px;
+    box-shadow:  0px 1px #ccc;
+}
+
+.cardActiviteMedium{
+    color: inherit;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    height: 45%;
+    box-shadow:  0px 1px #ccc;
+}
+
+
+
+.imgCardActivite{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.imgMedium{
+    height: 80%;
+}
+
+.imgLarge{
+    height:90%;
+}
+
+.textCardActivite{
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+ /**
+   * Footer
+    ==========================================================================
+   */
 
 footer{
     display: flex;
@@ -322,9 +499,18 @@ footer{
     padding-top: 20px;
 }
 
+
+
+
+
 @media only screen and (max-width: 992px) {
 
 }
+
+ /**
+   * Mobile
+    ==========================================================================
+   */
 
 @media only screen and (max-width: 768px) {
     header {
@@ -392,6 +578,27 @@ footer{
     .hebergements {
         flex-direction: column;
         width: 100%;
+        margin-left: 0px;
+    }
+
+    .lesPlusPopulaires{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+        border-radius: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cardPopulaire{
+        width: 100%;
+        height: 150px;
+    }
+
+    .imgCardHergementsLesPlusPop{
+        width: 40%;
+        border-radius: 5px 5px 0px 0px;
     }
 
     .hebergements_a_marseille{
@@ -399,7 +606,12 @@ footer{
         border-radius: 0px;
         order: 2;
         background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+
     }
+
 
     .ligneHebergement{
         width: 100%;
@@ -408,19 +620,46 @@ footer{
     }
 
     .card{
-        width: 90%;
+        width: 100%;
         box-shadow:  0px 1px #ccc;
         margin-top: 20px;
+        margin-right: 0px;
     }
 
-    .lesPlusPopulaires{
+    
+    .activites{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .cardActiviteLarge{
         width: 100%;
-        margin-left: 0px;
-        padding-bottom: 0px;
-        border-radius: 0px;
+        height: 200px;
     }
 
-    .cardPopulaire{
-        height: 200px;
+    .activitesSplit{
+        margin-top: 40px;
+        width: 100%;
+        height: 400px;
+    }
+
+
+    .imgMedium{
+        height: 70%;
+    }
+    
+    .imgLarge{
+        height: 70%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    .footerSection{
+        width: 100%;
+        padding-left: 40px;
+        padding-bottom: 40px;
     }
 }

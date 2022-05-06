@@ -18,13 +18,16 @@ body {
 }
 
 h1{
-    margin-left: 20px;
     padding-top: 20px;
     font-size: 20px;
 }
 
 h2{
     font-size: 17px;
+}
+
+.marginTitle{
+    margin-left: 20px;
 }
 
 
@@ -80,6 +83,9 @@ header {
     ==========================================================================
    */
 
+.description {
+    margin-left: 20px;;
+}
 
 .research{
     margin-left: 20px;
@@ -149,14 +155,15 @@ header {
    */
 
 
-
 .filtres{
-    margin-left: 20px;
     padding-top: 20px;
     display:flex;
     flex-direction: row;
 }
 
+.filtreTitle{
+    margin-left: 20px;
+}
 
 .filtre_element{
     padding-left: 20px;
@@ -386,9 +393,17 @@ h4{
     padding: 5px 5px 5px 5px;
 }
 
-.pricepop{
-    padding-bottom: 15px;
+.cardTexte{
+    position: relative;
 }
+
+.ratingPop{
+    position: absolute;
+    bottom: 10px;
+}
+
+
+
 
 
 
@@ -406,6 +421,7 @@ h4{
     height: 700px;
     padding-bottom: 40px;
 }
+
 
 .activitesSplit{
     width: 25%;
@@ -426,7 +442,7 @@ h4{
     width: 25%;
     height: 100%;
     margin-right: 20px;
-    box-shadow:  0px 1px #ccc;
+    box-shadow:  1px 1px 1px 1px #ccc;
 }
 
 .cardActiviteMedium{
@@ -436,7 +452,7 @@ h4{
     border-radius: 20px 20px 20px 20px;
     width: 100%;
     height: 45%;
-    box-shadow:  0px 1px #ccc;
+    box-shadow:  1px 1px 1px 1px #ccc;
 }
 
 
@@ -499,11 +515,33 @@ footer{
     padding-top: 20px;
 }
 
-
-
-
-
 @media only screen and (max-width: 992px) {
+    .hebergements {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .lesPlusPopulaires{
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-bottom: 0px;
+        border-radius: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hebergements_a_marseille{
+        width: 100%;
+        border-radius: 0px;
+        order: 2;
+        background-color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 0;
+    }
+
 
 }
 
@@ -621,16 +659,17 @@ footer{
 
     .card{
         width: 100%;
-        box-shadow:  0px 1px #ccc;
+        box-shadow:  1px 1px 1px 1px #ccc;
         margin-top: 20px;
         margin-right: 0px;
     }
 
     
     .activites{
+        margin-left: 0;
         flex-direction: column;
         height: auto;
-        padding: 20px;
+        padding: 0px 20px 0px 20px ;
     }
 
     .cardActiviteLarge{
@@ -642,8 +681,8 @@ footer{
         margin-top: 40px;
         width: 100%;
         height: 400px;
+        margin-bottom: 40px;
     }
-
 
     .imgMedium{
         height: 70%;
@@ -663,3 +702,5 @@ footer{
         padding-bottom: 40px;
     }
 }
+
+

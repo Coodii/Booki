@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../css/normalize.css">
         <link rel="stylesheet" type="text/css" href="../css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
         <link href="css/fontawesome-all.css" rel="stylesheet">
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet">
         <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet">
@@ -25,13 +25,13 @@
             </header>
             <main>
                 <article class="accomodation_article">
-                    <h1 class = "title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2 class = "title">Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p class = "description">En plein centre ville ou pleine nature</p>
                     <form class="research">
-                        <div class="iconBackground"><i class="fa-solid fa-location-dot" id="localisation"></i></div>
+                        <div class="background_icon"><i class="fa-solid fa-location-dot" id="localisation"></i></div>
                         <input type ="search" id="research" value="Marseille,France">
-                        <button class="researchButton">Rechercher</button>
-                        <button class="researchButtonMobile"><i id="loupe" class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="research_button">Rechercher</button>
+                        <button class="research_button_mobile"><i id="loupe" class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                     <div class="filters">
                         <h2 class = 'filter_title'>Filtres</h2>
@@ -43,14 +43,13 @@
                                 <div class="filter_button_content"><i class="fa-solid fa-child-reaching"></i></div><button class="filter_button">Familial</button>
                             </div>
                         </div>
-                        <div class="filter_row">
+                        <div class="filter_row second_row">
                         <div class="filter_element">
                             <div class="filter_button_content"><i class="fa-solid fa-heart"></i></div><button class="filter_button">Romantique</button>
                         </div>
                         <div class="filter_element">
-                            <div class="filter_button_content"><i class="fa-solid fa-dog"></i></div><button class="filter_button">Animaux autorisés</button>
+                            <div class="filter_button_content"><i class="fa-solid fa-dog"></i></div><button class="filter_button">Animaux autorisés</button></div>
                         </div>
-                    </div>
                     </div>
                     <div class='accomodation_informations'>
                         <div class= "accomodation_informations_icon"><i class="fa-solid fa-info"></i></div>
@@ -58,10 +57,10 @@
                     </div>
                     <section id="accomodation" class="accomodation_container">
                         <div class="marseille_accomodation">
-                            <h1>Hébergements à Marseille</h1>
+                            <h2>Hébergements à Marseille</h2>
                             <div class = 'accomodation_row'>
                                 <a class = "accomodation_card" href="#">
-                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="card4"></img>
+                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="card1">
                                     <h4>Auberge la Cannebière</h4>
                                     <p class="price">Nuit à partir de <span class="boldCurrency">25€</span></p>
                                     <div class = "rating">
@@ -73,7 +72,7 @@
                                     </div>
                                 </a>
                                 <a class = "accomodation_card" href="#">
-                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="card4"></img>
+                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="card2">
                                     <h4>Hôtel du port</h4>
                                     <p class="price">Nuit à partir de <span class="boldCurrency">52€</span></p>
                                     <div class = "rating">
@@ -85,7 +84,7 @@
                                     </div>
                                 </a>
                                 <a class = "accomodation_card" href="#">
-                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="card4"></img>
+                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="card3">
                                     <h4>Hôtel Les mouettes</h4>
                                     <p class="price">Nuit à partir de <span class="boldCurrency">76€</span></p>
                                     <div class = "rating">
@@ -99,7 +98,7 @@
                             </div>
                             <div class = 'accomodation_row'>
                                 <a class = "accomodation_card" href="#">
-                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="card4"></img>
+                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="card4">
                                     <h4>Hôtel de la mer</h4>
                                     <p class="price">Nuit à partir de <span class="boldCurrency">46€</span></p>
                                     <div class = "rating">
@@ -111,7 +110,7 @@
                                     </div>
                                 </a>
                                 <a class = "accomodation_card" href="#">
-                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="card4"></img>
+                                    <img class= "accomodation_card_image" src="../images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="card5">
                                     <h4>Auberge le Panier</h4>
                                     <p class="price">Nuit à partir de <span class="boldCurrency">23€</span></p>
                                     <div class = "rating">
@@ -123,7 +122,7 @@
                                     </div>
                                 </a>
                                 <a class = "accomodation_card " href="#">
-                                    <img class= "accomodation_card_image" src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="card4"></img>
+                                    <img class= "accomodation_card_image" src="../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="card6">
                                     <h4>Hôtel chez Amina</h4>
                                     <p class="price">Nuit à partir de <span class="boldCurrency">96€</span></p>
                                     <div class = "rating">
@@ -139,12 +138,12 @@
                         </div>
                         <div class="most_famous">
                             <div class="most_famous_title">
-                                <h1>Les plus populaires</h1>
+                                <h2>Les plus populaires</h2>
                                 <div class="trending"><i class="fas fa-chart-line"></i></div>
                             </div>
                             <div class = 'famous_accomodations'>
                                 <a class = "famous_accomodations_card" href="#">
-                                    <img class= "famous_accomodations_card_image" src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="card4"></img>
+                                    <img class= "famous_accomodations_card_image" src="../images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="famous_card1">
                                     <div class="famous_accomodations_card_text">
                                         <h4>Hôtel de la mer</h4>
                                         <p class="price">Nuit à partir de <span class="boldCurrency">46€</span></p>
@@ -158,7 +157,7 @@
                                     </div>
                                 </a>
                                 <a class = "famous_accomodations_card" href="#">
-                                    <img class= "famous_accomodations_card_image" src="../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="card4"></img>
+                                    <img class= "famous_accomodations_card_image" src="../images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="famous_card2">
                                     <div class="famous_accomodations_card_text">
                                         <h4>Auberge le Panier</h4>
                                         <p class="price">Nuit à partir de <span class="boldCurrency">23€</span></p>
@@ -172,7 +171,7 @@
                                     </div>
                                 </a>
                                 <a class = "famous_accomodations_card" href="#">
-                                    <img class= "famous_accomodations_card_image" src="../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="card4"></img>
+                                    <img class= "famous_accomodations_card_image" src="../images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="famous_card3">
                                         <div class="famous_accomodations_card_text">
                                             <h4>Hôtel chez Amina</h4>
                                             <p class="price">Nuit à partir de <span class="boldCurrency">96€</span></p>
@@ -189,33 +188,33 @@
                         </div>
                     </section>
                     <article id = "activity">
-                        <h1 class ='title'>Activités à Marseille</h1>
+                        <h2 class ='title'>Activités à Marseille</h2>
                         <div class="activity">
                             <a class = "activity_large_card" href="#">
-                                <img class= "activity_card_image large_image" src="../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="card4"></img>
+                                <img class= "activity_card_image large_image" src="../images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="activity1">
                                 <p class = "activity_card_text">Vieux port</p>
                             </a>
                             <div class = "activity_container">
                                 <a class = "cardActiviteMedium" href="#">
-                                    <img class= "activity_card_image medium_image" src="../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="card4"></img>
+                                    <img class= "activity_card_image medium_image" src="../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="activity2">
                                     <p class = "activity_card_text">Fort de Pomègues</p>
                                 </a>
                                 <a class = "cardActiviteMedium" href="#">
-                                    <img class= "activity_card_image medium_image" src="../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="card4"></img>
+                                    <img class= "activity_card_image medium_image" src="../images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="activity3">
                                     <p class = "activity_card_text">Îles du Frioul</p>
                                 </a>
                             </div>
                             <a class = "activity_large_card second" href="#">
-                                <img class= "activity_card_image large_image" src="../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="card4"></img>
+                                <img class= "activity_card_image large_image" src="../images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="activity4">
                                 <p class = "activity_card_text">Parc National des Calanques</p>
                             </a>
                             <div class = "activity_container">
                                 <a class = "cardActiviteMedium" href="#">
-                                    <img class= "activity_card_image medium_image" src="../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="card4"></img>
+                                    <img class= "activity_card_image medium_image" src="../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="activity5">
                                     <p class = "activity_card_text">Notre-Dame-de-la-Garde</p>
                                 </a>
                                 <a class = "cardActiviteMedium" href="#">
-                                    <img class= "activity_card_image medium_image" src="../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="card4"></img>
+                                    <img class= "activity_card_image medium_image" src="../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="activity6">
                                     <p class = "activity_card_text">Parc Longchamps</p>
                                 </a>
                             </div>
